@@ -21,3 +21,24 @@
 .button-block {
   width: 100%;
 }
+
+.details {
+  background: white;
+  width: 100%;
+  padding: 16px;
+}
+
+.detailsText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rowDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.teste {
+  margin-top: 16px;
+}

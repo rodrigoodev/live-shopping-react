@@ -30,3 +30,8 @@
   object-fit: cover;
   margin-right: 10px;
 }
+
+.details {
+  background: white;
+  width: 100%;
+}
