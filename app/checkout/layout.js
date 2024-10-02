@@ -2,12 +2,14 @@
 import style from "./Style.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ProductProvider } from "../context/ProductContext";
+import Details from "../components/Details";
 
 export default function Layout({ children }) {
   const currentPath = usePathname();
 
   return (
-    <>
+    <ProductProvider>
       <header className={style.header}>
         <nav className={style.navWrapper}>
           <div className={style.nav}>
@@ -41,6 +43,7 @@ export default function Layout({ children }) {
         </nav>
       </header>
       <main className={style.main}>{children}</main>
-    </>
+      <Details></Details>
+    </ProductProvider>
   );
 }
